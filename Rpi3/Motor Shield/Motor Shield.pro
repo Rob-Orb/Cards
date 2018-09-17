@@ -1,4 +1,4 @@
-update=2018 September 16, Sunday 18:56:11
+update=17/09/2018 14:15:40
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../Rob-Meca
+LibDir=../../kicad-symbols
 [eeschema/libraries]
 LibName1=power
 LibName2=device
