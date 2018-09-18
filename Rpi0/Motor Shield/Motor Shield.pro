@@ -1,4 +1,4 @@
-update=17/09/2018 14:16:42
+update=17/09/2018 18:09:55
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,6 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=Rob
+LibName31=nxp
+LibName32=infineon
+LibName33=onsemi
