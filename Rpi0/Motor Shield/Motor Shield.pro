@@ -1,4 +1,4 @@
-update=17/09/2018 18:09:55
+update=19/09/2018 12:05:04
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=Rob
 LibName31=nxp
 LibName32=infineon
 LibName33=onsemi
+LibName34=microchip_pic16mcu
