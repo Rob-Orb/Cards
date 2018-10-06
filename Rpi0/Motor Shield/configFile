@@ -1,0 +1,7 @@
+load Motor.kicad_pcb
+clone-nets true
+exclude-layer Edge.Cuts
+source-area 142 69 172 134
+copy 172 69
+copy 202 69
+save panelized.kicad_pcb
