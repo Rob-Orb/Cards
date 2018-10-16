@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -414,86 +414,24 @@ Text GLabel 4250 2850 0    60   Input ~ 0
 ERROR2
 NoConn ~ 4250 2750
 NoConn ~ 4250 2850
-Text GLabel 8700 5200 2    60   Input ~ 0
+Text GLabel 5650 4500 0    60   Input ~ 0
 PWM1
-Text GLabel 8700 5000 2    60   Input ~ 0
+Text GLabel 5650 4600 0    60   Input ~ 0
 PWM2
-Text GLabel 4100 5400 0    60   Input ~ 0
+Text GLabel 5650 5000 0    60   Input ~ 0
 SDA
-Text GLabel 4100 5600 0    60   Input ~ 0
+Text GLabel 5650 5100 0    60   Input ~ 0
 SCL
-NoConn ~ 4200 4900
-NoConn ~ 8600 4700
-NoConn ~ 8600 4800
-NoConn ~ 8600 4900
-NoConn ~ 8600 5100
-NoConn ~ 8600 5300
-NoConn ~ 8600 5400
-$Comp
-L power:GND #PWR016
-U 1 1 5BA28138
-P 6400 6100
-F 0 "#PWR016" H 6400 5850 50  0001 C CNN
-F 1 "GND" H 6400 5950 50  0000 C CNN
-F 2 "" H 6400 6100 50  0001 C CNN
-F 3 "" H 6400 6100 50  0001 C CNN
-	1    6400 6100
-	1    0    0    -1  
-$EndComp
 Text GLabel 7050 3250 2    60   Input ~ 0
 ICSP_DAT
 Text GLabel 7050 3350 2    60   Input ~ 0
 ICSP_CLK
 Text GLabel 5850 3150 0    60   Input ~ 0
 MCLR
-Text GLabel 3750 5000 3    60   Input ~ 0
+Text GLabel 7050 4500 2    60   Input ~ 0
 MCLR
-Text GLabel 4100 4800 0    60   Input ~ 0
+Text GLabel 7050 4600 2    60   Input ~ 0
 ICSP_CLK
-$Comp
-L power:+3.3V #PWR017
-U 1 1 5BB38762
-P 3250 4600
-F 0 "#PWR017" H 3250 4450 50  0001 C CNN
-F 1 "+3.3V" H 3250 4740 50  0000 C CNN
-F 2 "" H 3250 4600 50  0001 C CNN
-F 3 "" H 3250 4600 50  0001 C CNN
-	1    3250 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 5BB387E4
-P 3250 4800
-F 0 "R2" H 3280 4820 50  0000 L CNN
-F 1 "10k" H 3280 4760 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3250 4800 50  0001 C CNN
-F 3 "" H 3250 4800 50  0001 C CNN
-	1    3250 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C11
-U 1 1 5BB388A1
-P 3250 5200
-F 0 "C11" H 3260 5270 50  0000 L CNN
-F 1 "1uF" H 3260 5120 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3250 5200 50  0001 C CNN
-F 3 "" H 3250 5200 50  0001 C CNN
-	1    3250 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5BB38B94
-P 3500 5000
-F 0 "R3" H 3530 5020 50  0000 L CNN
-F 1 "470" H 3530 4960 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3500 5000 50  0001 C CNN
-F 3 "" H 3500 5000 50  0001 C CNN
-	1    3500 5000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2350 2250 2250 2250
 Wire Wire Line
@@ -622,53 +560,13 @@ Wire Wire Line
 Wire Wire Line
 	6950 2450 7050 2450
 Wire Wire Line
-	8700 5000 8600 5000
-Wire Wire Line
-	8700 5200 8600 5200
-Wire Wire Line
-	4200 5400 4100 5400
-Wire Wire Line
-	4100 5600 4200 5600
-Wire Wire Line
-	6400 4300 6400 4400
-Wire Wire Line
-	6400 6100 6400 6000
-Wire Wire Line
 	7050 3250 6950 3250
 Wire Wire Line
 	7050 3350 6950 3350
 Wire Wire Line
 	5950 3150 5850 3150
-Wire Wire Line
-	4200 4700 4100 4700
-Wire Wire Line
-	4100 4800 4200 4800
-Wire Wire Line
-	3600 5000 4200 5000
-Wire Wire Line
-	3250 4600 3250 4700
-Wire Wire Line
-	3250 4900 3250 5000
-Wire Wire Line
-	3400 5000 3250 5000
-Connection ~ 3250 5000
-$Comp
-L power:GND #PWR018
-U 1 1 5BB38E12
-P 3250 5400
-F 0 "#PWR018" H 3250 5150 50  0001 C CNN
-F 1 "GND" H 3250 5250 50  0000 C CNN
-F 2 "" H 3250 5400 50  0001 C CNN
-F 3 "" H 3250 5400 50  0001 C CNN
-	1    3250 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 5300 3250 5400
-Text GLabel 4100 4100 1    60   Input ~ 0
+Text GLabel 7050 4700 2    60   Input ~ 0
 ICSP_DAT
-Wire Wire Line
-	4100 4700 4100 4600
 Wire Wire Line
 	5950 1450 5850 1450
 $Comp
@@ -681,17 +579,6 @@ F 2 "" H 5850 1450 50  0001 C CNN
 F 3 "" H 5850 1450 50  0001 C CNN
 	1    5850 1450
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR020
-U 1 1 5BB79A1C
-P 6400 4300
-F 0 "#PWR020" H 6400 4150 50  0001 C CNN
-F 1 "+3.3V" H 6400 4440 50  0000 C CNN
-F 2 "" H 6400 4300 50  0001 C CNN
-F 3 "" H 6400 4300 50  0001 C CNN
-	1    6400 4300
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C9
@@ -757,87 +644,79 @@ Connection ~ 9750 3700
 $Comp
 L power:+5V #PWR023
 U 1 1 5BB7B6C7
-P 10650 2850
-F 0 "#PWR023" H 10650 2700 50  0001 C CNN
-F 1 "+5V" H 10650 2990 50  0000 C CNN
-F 2 "" H 10650 2850 50  0001 C CNN
-F 3 "" H 10650 2850 50  0001 C CNN
-	1    10650 2850
+P 8300 4550
+F 0 "#PWR023" H 8300 4400 50  0001 C CNN
+F 1 "+5V" H 8300 4690 50  0000 C CNN
+F 2 "" H 8300 4550 50  0001 C CNN
+F 3 "" H 8300 4550 50  0001 C CNN
+	1    8300 4550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR024
 U 1 1 5BB7B729
-P 10650 3750
-F 0 "#PWR024" H 10650 3600 50  0001 C CNN
-F 1 "+5V" H 10650 3890 50  0000 C CNN
-F 2 "" H 10650 3750 50  0001 C CNN
-F 3 "" H 10650 3750 50  0001 C CNN
-	1    10650 3750
+P 8300 5450
+F 0 "#PWR024" H 8300 5300 50  0001 C CNN
+F 1 "+5V" H 8300 5590 50  0000 C CNN
+F 2 "" H 8300 5450 50  0001 C CNN
+F 3 "" H 8300 5450 50  0001 C CNN
+	1    8300 5450
 	0    -1   -1   0   
 $EndComp
-Text GLabel 10650 3050 0    60   Input ~ 0
+Text GLabel 8300 4750 0    60   Input ~ 0
 B1
-Text GLabel 10650 2950 0    60   Input ~ 0
+Text GLabel 8300 4650 0    60   Input ~ 0
 A1
-Text GLabel 10650 3850 0    60   Input ~ 0
+Text GLabel 8300 5550 0    60   Input ~ 0
 A2
-Text GLabel 10650 3950 0    60   Input ~ 0
+Text GLabel 8300 5650 0    60   Input ~ 0
 B2
 $Comp
 L power:GND #PWR025
 U 1 1 5BB7BB1B
-P 10650 3150
-F 0 "#PWR025" H 10650 2900 50  0001 C CNN
-F 1 "GND" H 10650 3000 50  0000 C CNN
-F 2 "" H 10650 3150 50  0001 C CNN
-F 3 "" H 10650 3150 50  0001 C CNN
-	1    10650 3150
+P 8300 4850
+F 0 "#PWR025" H 8300 4600 50  0001 C CNN
+F 1 "GND" H 8300 4700 50  0000 C CNN
+F 2 "" H 8300 4850 50  0001 C CNN
+F 3 "" H 8300 4850 50  0001 C CNN
+	1    8300 4850
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR026
 U 1 1 5BB7BB7D
-P 10650 4050
-F 0 "#PWR026" H 10650 3800 50  0001 C CNN
-F 1 "GND" H 10650 3900 50  0000 C CNN
-F 2 "" H 10650 4050 50  0001 C CNN
-F 3 "" H 10650 4050 50  0001 C CNN
-	1    10650 4050
+P 8300 5750
+F 0 "#PWR026" H 8300 5500 50  0001 C CNN
+F 1 "GND" H 8300 5600 50  0000 C CNN
+F 2 "" H 8300 5750 50  0001 C CNN
+F 3 "" H 8300 5750 50  0001 C CNN
+	1    8300 5750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10750 2850 10650 2850
+	8400 4550 8300 4550
 Wire Wire Line
-	10650 2950 10750 2950
+	8300 4650 8400 4650
 Wire Wire Line
-	10750 3050 10650 3050
+	8400 4750 8300 4750
 Wire Wire Line
-	10650 3150 10750 3150
+	8300 4850 8400 4850
 Wire Wire Line
-	10750 3750 10650 3750
+	8400 5450 8300 5450
 Wire Wire Line
-	10650 3850 10750 3850
+	8300 5550 8400 5550
 Wire Wire Line
-	10750 3950 10650 3950
+	8400 5650 8300 5650
 Wire Wire Line
-	10650 4050 10750 4050
-Text GLabel 4100 5100 0    60   Input ~ 0
+	8300 5750 8400 5750
+Text GLabel 5650 5450 0    60   Input ~ 0
 A1
-Text GLabel 4100 5200 0    60   Input ~ 0
+Text GLabel 5650 5550 0    60   Input ~ 0
 B1
-Text GLabel 4100 5500 0    60   Input ~ 0
+Text GLabel 5650 5250 0    60   Input ~ 0
 A2
-Text GLabel 4100 5700 0    60   Input ~ 0
+Text GLabel 5650 5350 0    60   Input ~ 0
 B2
-Wire Wire Line
-	4200 5100 4100 5100
-Wire Wire Line
-	4100 5200 4200 5200
-Wire Wire Line
-	4200 5500 4100 5500
-Wire Wire Line
-	4100 5700 4200 5700
 $Comp
 L power:+5V #PWR027
 U 1 1 5BB797DF
@@ -877,8 +756,6 @@ Wire Wire Line
 	9150 1450 9600 1450
 Wire Wire Line
 	1750 5300 1850 5300
-Wire Wire Line
-	3250 5000 3250 5100
 Wire Wire Line
 	8950 3700 9050 3700
 Wire Wire Line
@@ -921,23 +798,23 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Female J6
 U 1 1 5BB92B25
-P 10950 2950
-F 0 "J6" H 10977 2926 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 10977 2835 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10950 2950 50  0001 C CNN
-F 3 "~" H 10950 2950 50  0001 C CNN
-	1    10950 2950
+P 8600 4650
+F 0 "J6" H 8627 4626 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 8627 4535 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8600 4650 50  0001 C CNN
+F 3 "~" H 8600 4650 50  0001 C CNN
+	1    8600 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x04_Female J7
 U 1 1 5BB92C38
-P 10950 3850
-F 0 "J7" H 10977 3826 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 10977 3735 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10950 3850 50  0001 C CNN
-F 3 "~" H 10950 3850 50  0001 C CNN
-	1    10950 3850
+P 8600 5550
+F 0 "J7" H 8627 5526 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 8627 5435 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8600 5550 50  0001 C CNN
+F 3 "~" H 8600 5550 50  0001 C CNN
+	1    8600 5550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -950,28 +827,6 @@ F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 9350 3900 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 9450 3450 50  0001 C CNN
 	1    9350 3700
 	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_Microchip_PIC16:PIC16F1509-ISS U3
-U 1 1 5BB9306A
-P 6400 5200
-F 0 "U3" H 6400 6178 50  0000 C CNN
-F 1 "PIC16F1509-ISS" H 6400 6087 50  0000 C CNN
-F 2 "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm" H 6400 5200 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41609A.pdf" H 6400 5200 50  0001 C CNN
-	1    6400 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J2
-U 1 1 5BB93395
-P 4100 4300
-F 0 "J2" V 4104 4380 50  0000 L CNN
-F 1 "Conn_02x01" V 4195 4380 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 4100 4300 50  0001 C CNN
-F 3 "~" H 4100 4300 50  0001 C CNN
-	1    4100 4300
-	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x01 J3
@@ -1033,4 +888,25 @@ Wire Wire Line
 	3450 2050 3450 1950
 Connection ~ 3450 2050
 Connection ~ 3450 1950
+$Sheet
+S 5650 4400 1400 1650
+U 5BC60BBF
+F0 "PIC16LF1509" 50
+F1 "PIC.sch" 50
+F2 "PWM1" B L 5650 4500 50 
+F3 "PWM2" B L 5650 4600 50 
+F4 "PWM3" B L 5650 4700 50 
+F5 "PWM4" B L 5650 4800 50 
+F6 "SDA" B L 5650 5000 50 
+F7 "SCL" B L 5650 5100 50 
+F8 "A2" B L 5650 5250 50 
+F9 "B2" B L 5650 5350 50 
+F10 "A1" B L 5650 5450 50 
+F11 "B1" B L 5650 5550 50 
+F12 "MCLR" B R 7050 4500 50 
+F13 "ICSP_CLK" B R 7050 4600 50 
+F14 "ISCP_DAT" B R 7050 4700 50 
+$EndSheet
+NoConn ~ 5650 4700
+NoConn ~ 5650 4800
 $EndSCHEMATC
