@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:esc_brushless_motor-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -161,7 +162,7 @@ F 3 "" H 5900 3000 50  0001 C CNN
 	1    5900 3000
 	1    0    0    -1  
 $EndComp
-Text HLabel 3300 3700 3    50   BiDi ~ 0
+Text HLabel 3350 3700 3    50   BiDi ~ 0
 MCLR
 Text HLabel 3600 3500 0    50   BiDi ~ 0
 ICSP_CLK
@@ -182,4 +183,16 @@ NoConn ~ 3600 3800
 NoConn ~ 3600 3900
 NoConn ~ 3600 4200
 NoConn ~ 3600 4400
+Text HLabel 3500 4900 0    50   BiDi ~ 0
+H_U
+Text HLabel 3500 5000 0    50   BiDi ~ 0
+L_U
+Text HLabel 3800 4900 0    50   BiDi ~ 0
+H_V
+Text HLabel 3800 5000 0    50   BiDi ~ 0
+L_V
+Text HLabel 4100 4900 0    50   BiDi ~ 0
+H_W
+Text HLabel 4100 5000 0    50   BiDi ~ 0
+L_W
 $EndSCHEMATC

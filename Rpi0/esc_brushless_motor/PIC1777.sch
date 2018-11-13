@@ -1,0 +1,301 @@
+EESchema Schematic File Version 4
+LIBS:esc_brushless_motor-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5BEAE3BA
+P 5250 3350
+AR Path="/5BE998B4/5BEAE3BA" Ref="#PWR?"  Part="1" 
+AR Path="/5BEAC466/5BEAE3BA" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 5250 3100 50  0001 C CNN
+F 1 "GND" H 5250 3200 50  0000 C CNN
+F 2 "" H 5250 3350 50  0001 C CNN
+F 3 "" H 5250 3350 50  0001 C CNN
+	1    5250 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BEAE3C0
+P 6000 5100
+AR Path="/5BE998B4/5BEAE3C0" Ref="#PWR?"  Part="1" 
+AR Path="/5BEAC466/5BEAE3C0" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 6000 4950 50  0001 C CNN
+F 1 "+3.3V" H 6000 5240 50  0000 C CNN
+F 2 "" H 6000 5100 50  0001 C CNN
+F 3 "" H 6000 5100 50  0001 C CNN
+	1    6000 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BEAE3C6
+P 6200 5100
+AR Path="/5BE998B4/5BEAE3C6" Ref="R?"  Part="1" 
+AR Path="/5BEAC466/5BEAE3C6" Ref="R16"  Part="1" 
+F 0 "R16" H 6230 5120 50  0000 L CNN
+F 1 "10k" H 6230 5060 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6200 5100 50  0001 C CNN
+F 3 "" H 6200 5100 50  0001 C CNN
+	1    6200 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BEAE3CD
+P 6600 5100
+AR Path="/5BE998B4/5BEAE3CD" Ref="C?"  Part="1" 
+AR Path="/5BEAC466/5BEAE3CD" Ref="C7"  Part="1" 
+F 0 "C7" H 6610 5170 50  0000 L CNN
+F 1 "1uF" H 6610 5020 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6600 5100 50  0001 C CNN
+F 3 "" H 6600 5100 50  0001 C CNN
+	1    6600 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5BEAE3D4
+P 6400 4850
+AR Path="/5BE998B4/5BEAE3D4" Ref="R?"  Part="1" 
+AR Path="/5BEAC466/5BEAE3D4" Ref="R17"  Part="1" 
+F 0 "R17" H 6430 4870 50  0000 L CNN
+F 1 "470" H 6430 4810 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6400 4850 50  0001 C CNN
+F 3 "" H 6400 4850 50  0001 C CNN
+	1    6400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2450 6500 2550
+Wire Wire Line
+	5250 3450 5350 3450
+Wire Wire Line
+	5250 3350 5350 3350
+Wire Wire Line
+	6200 4250 6200 4150
+Wire Wire Line
+	6400 4750 6400 4150
+Wire Wire Line
+	6000 5100 6100 5100
+Wire Wire Line
+	6300 5100 6400 5100
+Wire Wire Line
+	6400 4950 6400 5100
+Connection ~ 6400 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5BEAE3E8
+P 6800 5100
+AR Path="/5BE998B4/5BEAE3E8" Ref="#PWR?"  Part="1" 
+AR Path="/5BEAC466/5BEAE3E8" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 6800 4850 50  0001 C CNN
+F 1 "GND" H 6800 4950 50  0000 C CNN
+F 2 "" H 6800 5100 50  0001 C CNN
+F 3 "" H 6800 5100 50  0001 C CNN
+	1    6800 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 5100 6800 5100
+Wire Wire Line
+	6300 4150 6300 4250
+Wire Wire Line
+	6400 5100 6500 5100
+$Comp
+L Connector_Generic:Conn_02x01 J?
+U 1 1 5BEAE3F5
+P 6300 4550
+AR Path="/5BE998B4/5BEAE3F5" Ref="J?"  Part="1" 
+AR Path="/5BEAC466/5BEAE3F5" Ref="J1"  Part="1" 
+F 0 "J1" V 6304 4630 50  0000 L CNN
+F 1 "Conn_02x01" V 6395 4630 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 6300 4550 50  0001 C CNN
+F 3 "~" H 6300 4550 50  0001 C CNN
+	1    6300 4550
+	0    -1   -1   0   
+$EndComp
+Text HLabel 6000 2450 1    50   BiDi ~ 0
+SDA
+Text HLabel 6500 2450 1    50   BiDi ~ 0
+SCL
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BEAE404
+P 5250 3450
+AR Path="/5BE998B4/5BEAE404" Ref="#PWR?"  Part="1" 
+AR Path="/5BEAC466/5BEAE404" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 5250 3300 50  0001 C CNN
+F 1 "+3.3V" H 5250 3590 50  0000 C CNN
+F 2 "" H 5250 3450 50  0001 C CNN
+F 3 "" H 5250 3450 50  0001 C CNN
+	1    5250 3450
+	0    -1   -1   0   
+$EndComp
+Text HLabel 7050 4750 2    50   BiDi ~ 0
+MCLR
+Text HLabel 6200 4250 0    50   BiDi ~ 0
+ICSP_CLK
+Text HLabel 6300 4750 0    50   BiDi ~ 0
+ICSP_DAT
+Text HLabel 3700 2900 2    50   BiDi ~ 0
+H_U
+Text HLabel 3700 3000 2    50   BiDi ~ 0
+L_U
+Text HLabel 3700 3100 2    50   BiDi ~ 0
+H_V
+Text HLabel 3700 3200 2    50   BiDi ~ 0
+L_V
+Text HLabel 3700 3300 2    50   BiDi ~ 0
+H_W
+Text HLabel 3700 3400 2    50   BiDi ~ 0
+L_W
+$Comp
+L Rob-5:PIC16F1777-TQFP U8
+U 1 1 5BEB0949
+P 6300 3350
+F 0 "U8" H 6250 4700 50  0000 L CNN
+F 1 "PIC16F1777-TQFP" H 5950 4600 50  0000 L CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 6300 3350 50  0001 C CNN
+F 3 "" H 6300 3350 50  0001 C CNN
+	1    6300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2450 6000 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5BEB4119
+P 7350 3250
+AR Path="/5BE998B4/5BEB4119" Ref="#PWR?"  Part="1" 
+AR Path="/5BEAC466/5BEB4119" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 7350 3000 50  0001 C CNN
+F 1 "GND" H 7350 3100 50  0000 C CNN
+F 2 "" H 7350 3250 50  0001 C CNN
+F 3 "" H 7350 3250 50  0001 C CNN
+	1    7350 3250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7350 3350 7250 3350
+Wire Wire Line
+	7350 3250 7250 3250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BEB4121
+P 7350 3350
+AR Path="/5BE998B4/5BEB4121" Ref="#PWR?"  Part="1" 
+AR Path="/5BEAC466/5BEB4121" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 7350 3200 50  0001 C CNN
+F 1 "+3.3V" H 7350 3490 50  0000 C CNN
+F 2 "" H 7350 3350 50  0001 C CNN
+F 3 "" H 7350 3350 50  0001 C CNN
+	1    7350 3350
+	0    1    -1   0   
+$EndComp
+Text GLabel 6400 2450 1    50   BiDi ~ 0
+PWM1
+Text GLabel 6300 2450 1    50   BiDi ~ 0
+PWM2
+Text GLabel 6200 2450 1    50   BiDi ~ 0
+PWM3
+Text GLabel 6100 2450 1    50   BiDi ~ 0
+PWM4
+Text GLabel 5250 2950 0    50   BiDi ~ 0
+PWM5
+Text GLabel 5250 3050 0    50   BiDi ~ 0
+PWM6
+Text GLabel 3600 2900 0    50   BiDi ~ 0
+PWM1
+Text GLabel 3600 3000 0    50   BiDi ~ 0
+PWM2
+Text GLabel 3600 3100 0    50   BiDi ~ 0
+PWM3
+Text GLabel 3600 3200 0    50   BiDi ~ 0
+PWM4
+Text GLabel 3600 3300 0    50   BiDi ~ 0
+PWM5
+Text GLabel 3600 3400 0    50   BiDi ~ 0
+PWM6
+NoConn ~ 7250 2850
+NoConn ~ 7250 3050
+NoConn ~ 7250 3150
+NoConn ~ 7250 3750
+NoConn ~ 7250 3850
+NoConn ~ 6800 4150
+NoConn ~ 6100 4150
+NoConn ~ 6000 4150
+NoConn ~ 5900 4150
+NoConn ~ 5800 4150
+NoConn ~ 5350 3850
+NoConn ~ 5350 3750
+NoConn ~ 5350 3650
+NoConn ~ 5350 3550
+NoConn ~ 5350 3250
+NoConn ~ 5350 3150
+NoConn ~ 5350 2850
+NoConn ~ 5800 2550
+NoConn ~ 5900 2550
+NoConn ~ 6600 2550
+NoConn ~ 6700 2550
+NoConn ~ 6800 2550
+Text HLabel 6500 4250 3    50   BiDi ~ 0
+SENSE_U
+Text HLabel 6600 4250 3    50   BiDi ~ 0
+SENSE_V
+Text HLabel 6700 4250 3    50   BiDi ~ 0
+SENSE_W
+Wire Wire Line
+	6700 4250 6700 4150
+Wire Wire Line
+	6600 4150 6600 4250
+Wire Wire Line
+	6500 4250 6500 4150
+Text HLabel 7350 2950 2    50   BiDi ~ 0
+Interrupt
+Wire Wire Line
+	7350 2950 7250 2950
+Wire Wire Line
+	7050 4750 6400 4750
+Connection ~ 6400 4750
+NoConn ~ 7250 3450
+NoConn ~ 7250 3550
+NoConn ~ 7250 3650
+Wire Wire Line
+	6400 2550 6400 2450
+Wire Wire Line
+	6300 2450 6300 2550
+Wire Wire Line
+	6200 2450 6200 2550
+Wire Wire Line
+	6100 2450 6100 2550
+Wire Wire Line
+	5350 2950 5250 2950
+Wire Wire Line
+	5250 3050 5350 3050
+Wire Wire Line
+	3700 2900 3600 2900
+Wire Wire Line
+	3600 3000 3700 3000
+Wire Wire Line
+	3700 3100 3600 3100
+Wire Wire Line
+	3600 3200 3700 3200
+Wire Wire Line
+	3700 3300 3600 3300
+Wire Wire Line
+	3600 3400 3700 3400
+$EndSCHEMATC
