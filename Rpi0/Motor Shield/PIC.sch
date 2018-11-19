@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -14,11 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 8100 3400
-NoConn ~ 8100 3600
-NoConn ~ 8100 3800
-NoConn ~ 8100 4000
-NoConn ~ 8100 4100
 $Comp
 L power:GND #PWR020
 U 1 1 5BC60E5E
@@ -29,50 +24,6 @@ F 2 "" H 5900 4800 50  0001 C CNN
 F 3 "" H 5900 4800 50  0001 C CNN
 	1    5900 4800
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR016
-U 1 1 5BC60E66
-P 2750 3300
-F 0 "#PWR016" H 2750 3150 50  0001 C CNN
-F 1 "+3.3V" H 2750 3440 50  0000 C CNN
-F 2 "" H 2750 3300 50  0001 C CNN
-F 3 "" H 2750 3300 50  0001 C CNN
-	1    2750 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 5BC60E6C
-P 2750 3500
-F 0 "R2" H 2780 3520 50  0000 L CNN
-F 1 "10k" H 2780 3460 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2750 3500 50  0001 C CNN
-F 3 "" H 2750 3500 50  0001 C CNN
-	1    2750 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C11
-U 1 1 5BC60E73
-P 2750 3900
-F 0 "C11" H 2760 3970 50  0000 L CNN
-F 1 "1uF" H 2760 3820 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 2750 3900 50  0001 C CNN
-F 3 "" H 2750 3900 50  0001 C CNN
-	1    2750 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5BC60E7A
-P 3000 3700
-F 0 "R3" H 3030 3720 50  0000 L CNN
-F 1 "470" H 3030 3660 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3000 3700 50  0001 C CNN
-F 3 "" H 3000 3700 50  0001 C CNN
-	1    3000 3700
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	8200 3700 8100 3700
@@ -91,28 +42,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 3500 3700 3500
 Wire Wire Line
-	3100 3700 3700 3700
-Wire Wire Line
-	2750 3300 2750 3400
-Wire Wire Line
-	2750 3600 2750 3700
-Wire Wire Line
-	2900 3700 2750 3700
-Connection ~ 2750 3700
-$Comp
-L power:GND #PWR017
-U 1 1 5BC60E8E
-P 2750 4100
-F 0 "#PWR017" H 2750 3850 50  0001 C CNN
-F 1 "GND" H 2750 3950 50  0000 C CNN
-F 2 "" H 2750 4100 50  0001 C CNN
-F 3 "" H 2750 4100 50  0001 C CNN
-	1    2750 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 4000 2750 4100
-Wire Wire Line
 	3600 3400 3600 3300
 Wire Wire Line
 	3700 3800 3600 3800
@@ -122,8 +51,6 @@ Wire Wire Line
 	3700 4200 3600 4200
 Wire Wire Line
 	3600 4400 3700 4400
-Wire Wire Line
-	2750 3700 2750 3800
 $Comp
 L MCU_Microchip_PIC16:PIC16F1509-ISS U3
 U 1 1 5BC60EA6
@@ -135,27 +62,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41609A.pdf" H 5900 3900 50 
 	1    5900 3900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J2
-U 1 1 5BC60EAD
-P 3600 3000
-F 0 "J2" V 3604 3080 50  0000 L CNN
-F 1 "Conn_02x01" V 3695 3080 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 3600 3000 50  0001 C CNN
-F 3 "~" H 3600 3000 50  0001 C CNN
-	1    3600 3000
-	0    1    1    0   
-$EndComp
 Text HLabel 8200 3900 2    50   BiDi ~ 0
 PWM1
 Text HLabel 8200 3700 2    50   BiDi ~ 0
 PWM2
-Text HLabel 3600 3600 0    50   BiDi ~ 0
-PWM3
-Text HLabel 8200 3500 2    50   BiDi ~ 0
-PWM4
-Wire Wire Line
-	8200 3500 8100 3500
 Wire Wire Line
 	3700 3600 3600 3600
 Text HLabel 3600 4100 0    50   BiDi ~ 0
@@ -181,10 +91,46 @@ Text HLabel 3600 3800 0    50   BiDi ~ 0
 A1
 Text HLabel 3600 3900 0    50   BiDi ~ 0
 B1
-Text HLabel 3300 3700 3    50   BiDi ~ 0
+Text HLabel 3600 3700 0    50   BiDi ~ 0
 MCLR
 Text HLabel 3600 3500 0    50   BiDi ~ 0
 ICSP_CLK
-Text HLabel 3600 2800 1    50   BiDi ~ 0
+Text HLabel 3600 3000 1    50   BiDi ~ 0
 ISCP_DAT
+Text HLabel 8200 3400 2    50   BiDi ~ 0
+EN1
+Text HLabel 8200 3500 2    50   BiDi ~ 0
+EN2
+Text HLabel 8200 3800 2    50   BiDi ~ 0
+DIR1
+Text HLabel 8200 4000 2    50   BiDi ~ 0
+DIR2
+Wire Wire Line
+	8200 3400 8100 3400
+Wire Wire Line
+	8200 3800 8100 3800
+Wire Wire Line
+	8100 4000 8200 4000
+Text HLabel 3600 3600 0    50   Input ~ 0
+error
+Wire Wire Line
+	8200 3500 8100 3500
+NoConn ~ 8100 3600
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5BF30B96
+P 3600 3150
+F 0 "JP1" V 3554 3218 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 3645 3218 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3600 3150 50  0001 C CNN
+F 3 "~" H 3600 3150 50  0001 C CNN
+	1    3600 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 3700 3600 3700
+Text HLabel 8200 4100 2    50   BiDi ~ 0
+Bonus
+Wire Wire Line
+	8200 4100 8100 4100
 $EndSCHEMATC

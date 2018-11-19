@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -99,9 +99,9 @@ F 3 "" H 1250 2450 50  0001 C CNN
 	1    1250 2450
 	1    0    0    -1  
 $EndComp
-Text GLabel 2250 2150 0    60   Input ~ 0
+Text GLabel 2250 2150 0    60   Output ~ 0
 OUT1
-Text GLabel 3550 2250 2    60   Input ~ 0
+Text GLabel 3550 2250 2    60   Output ~ 0
 OUT2
 Text GLabel 2250 1750 0    60   Input ~ 0
 DIR1
@@ -186,9 +186,9 @@ F 3 "" H 1250 3950 50  0001 C CNN
 	1    1250 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 2250 3650 0    60   Input ~ 0
+Text GLabel 2250 3650 0    60   Output ~ 0
 OUT3
-Text GLabel 3550 3750 2    60   Input ~ 0
+Text GLabel 3550 3750 2    60   Output ~ 0
 OUT4
 Text GLabel 2250 3250 0    60   Input ~ 0
 DIR2
@@ -221,7 +221,7 @@ U 1 1 5B9FBF89
 P 8900 1750
 F 0 "C5" H 8910 1820 50  0000 L CNN
 F 1 "10nF" H 8910 1670 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8900 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8900 1750 50  0001 C CNN
 F 3 "" H 8900 1750 50  0001 C CNN
 	1    8900 1750
 	1    0    0    -1  
@@ -232,7 +232,7 @@ U 1 1 5B9FC0EC
 P 9150 1750
 F 0 "C7" H 9160 1820 50  0000 L CNN
 F 1 "10nF" H 9160 1670 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9150 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9150 1750 50  0001 C CNN
 F 3 "" H 9150 1750 50  0001 C CNN
 	1    9150 1750
 	1    0    0    -1  
@@ -243,7 +243,7 @@ U 1 1 5B9FC130
 P 8900 2500
 F 0 "C6" H 8910 2570 50  0000 L CNN
 F 1 "10nF" H 8910 2420 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8900 2500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8900 2500 50  0001 C CNN
 F 3 "" H 8900 2500 50  0001 C CNN
 	1    8900 2500
 	1    0    0    -1  
@@ -254,7 +254,7 @@ U 1 1 5B9FC179
 P 9150 2500
 F 0 "C8" H 9160 2570 50  0000 L CNN
 F 1 "10nF" H 9160 2420 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9150 2500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9150 2500 50  0001 C CNN
 F 3 "" H 9150 2500 50  0001 C CNN
 	1    9150 2500
 	1    0    0    -1  
@@ -285,7 +285,7 @@ Text GLabel 1200 3550 0    60   Input ~ 0
 BAT-PROT+
 Text GLabel 1050 5300 0    60   Input ~ 0
 BAT+
-Text GLabel 1850 5300 2    60   Input ~ 0
+Text GLabel 1850 5300 2    60   Output ~ 0
 BAT-PROT+
 $Comp
 L Device:D_Schottky D3
@@ -331,7 +331,7 @@ F 3 "" H 1350 5400 50  0001 C CNN
 	1    1350 5400
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2250 1950 0    60   Input ~ 0
+Text GLabel 2250 1950 0    60   Output ~ 0
 ERROR1
 $Comp
 L power:+3.3V #PWR013
@@ -344,7 +344,7 @@ F 3 "" H 2250 1850 50  0001 C CNN
 	1    2250 1850
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2250 3450 0    60   Input ~ 0
+Text GLabel 2250 3450 0    60   Output ~ 0
 ERROR2
 $Comp
 L power:+3.3V #PWR014
@@ -400,37 +400,35 @@ F 3 "" H 7050 1650 50  0001 C CNN
 	1    7050 1650
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5850 2150 0    60   Input ~ 0
+Text GLabel 7050 4950 2    60   Output ~ 0
 EN1
-Text GLabel 7050 2150 2    60   Input ~ 0
+Text GLabel 7050 5050 2    60   Output ~ 0
 EN2
-Text GLabel 7050 2250 2    60   Input ~ 0
+Text GLabel 7050 5150 2    60   Output ~ 0
 DIR1
-Text GLabel 7050 2450 2    60   Input ~ 0
+Text GLabel 7050 5250 2    60   Output ~ 0
 DIR2
 Text GLabel 4250 2750 0    60   Input ~ 0
 ERROR1
 Text GLabel 4250 2850 0    60   Input ~ 0
 ERROR2
-NoConn ~ 4250 2750
-NoConn ~ 4250 2850
-Text GLabel 5650 4500 0    60   Input ~ 0
+Text GLabel 5650 4500 0    60   Output ~ 0
 PWM1
-Text GLabel 5650 4600 0    60   Input ~ 0
+Text GLabel 5650 4600 0    60   Output ~ 0
 PWM2
-Text GLabel 5650 5000 0    60   Input ~ 0
+Text GLabel 5650 5000 0    60   BiDi ~ 0
 SDA
-Text GLabel 5650 5100 0    60   Input ~ 0
+Text GLabel 5650 5100 0    60   BiDi ~ 0
 SCL
-Text GLabel 7050 3250 2    60   Input ~ 0
+Text GLabel 7050 3250 2    60   BiDi ~ 0
 ICSP_DAT
-Text GLabel 7050 3350 2    60   Input ~ 0
+Text GLabel 7050 3350 2    60   BiDi ~ 0
 ICSP_CLK
-Text GLabel 5850 3150 0    60   Input ~ 0
+Text GLabel 5850 3150 0    60   Output ~ 0
 MCLR
 Text GLabel 7050 4500 2    60   Input ~ 0
 MCLR
-Text GLabel 7050 4600 2    60   Input ~ 0
+Text GLabel 7050 4600 2    60   BiDi ~ 0
 ICSP_CLK
 Wire Wire Line
 	2350 2250 2250 2250
@@ -552,20 +550,12 @@ Wire Wire Line
 Wire Wire Line
 	7050 1650 6950 1650
 Wire Wire Line
-	7050 2150 6950 2150
-Wire Wire Line
-	5850 2150 5950 2150
-Wire Wire Line
-	7050 2250 6950 2250
-Wire Wire Line
-	6950 2450 7050 2450
-Wire Wire Line
 	7050 3250 6950 3250
 Wire Wire Line
 	7050 3350 6950 3350
 Wire Wire Line
 	5950 3150 5850 3150
-Text GLabel 7050 4700 2    60   Input ~ 0
+Text GLabel 7050 4700 2    60   BiDi ~ 0
 ICSP_DAT
 Wire Wire Line
 	5950 1450 5850 1450
@@ -580,67 +570,6 @@ F 3 "" H 5850 1450 50  0001 C CNN
 	1    5850 1450
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:C_Small C9
-U 1 1 5BB7AA96
-P 8950 3800
-F 0 "C9" H 8960 3870 50  0000 L CNN
-F 1 "100nF" H 8960 3720 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 8950 3800 50  0001 C CNN
-F 3 "" H 8950 3800 50  0001 C CNN
-	1    8950 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C10
-U 1 1 5BB7ABCE
-P 9750 3800
-F 0 "C10" H 9760 3870 50  0000 L CNN
-F 1 "10uF" H 9760 3720 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9750 3800 50  0001 C CNN
-F 3 "" H 9750 3800 50  0001 C CNN
-	1    9750 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR021
-U 1 1 5BB7AD8D
-P 9350 4100
-F 0 "#PWR021" H 9350 3850 50  0001 C CNN
-F 1 "GND" H 9350 3950 50  0000 C CNN
-F 2 "" H 9350 4100 50  0001 C CNN
-F 3 "" H 9350 4100 50  0001 C CNN
-	1    9350 4100
-	1    0    0    -1  
-$EndComp
-Text GLabel 8850 3700 0    60   Input ~ 0
-BAT-PROT+
-Wire Wire Line
-	8850 3700 8950 3700
-Connection ~ 8950 3700
-Wire Wire Line
-	9650 3700 9750 3700
-Wire Wire Line
-	9750 4000 9750 3900
-Wire Wire Line
-	8950 4000 9350 4000
-Wire Wire Line
-	8950 4000 8950 3900
-Connection ~ 9350 4000
-Wire Wire Line
-	9350 4000 9350 4100
-$Comp
-L power:+5V #PWR022
-U 1 1 5BB7B248
-P 9850 3700
-F 0 "#PWR022" H 9850 3550 50  0001 C CNN
-F 1 "+5V" H 9850 3840 50  0000 C CNN
-F 2 "" H 9850 3700 50  0001 C CNN
-F 3 "" H 9850 3700 50  0001 C CNN
-	1    9850 3700
-	0    1    1    0   
-$EndComp
-Connection ~ 9750 3700
 $Comp
 L power:+5V #PWR023
 U 1 1 5BB7B6C7
@@ -663,13 +592,13 @@ F 3 "" H 8300 5450 50  0001 C CNN
 	1    8300 5450
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8300 4750 0    60   Input ~ 0
+Text GLabel 8300 4750 0    60   Output ~ 0
 B1
-Text GLabel 8300 4650 0    60   Input ~ 0
+Text GLabel 8300 4650 0    60   Output ~ 0
 A1
-Text GLabel 8300 5550 0    60   Input ~ 0
+Text GLabel 8300 5550 0    60   Output ~ 0
 A2
-Text GLabel 8300 5650 0    60   Input ~ 0
+Text GLabel 8300 5650 0    60   Output ~ 0
 B2
 $Comp
 L power:GND #PWR025
@@ -756,12 +685,6 @@ Wire Wire Line
 	9150 1450 9600 1450
 Wire Wire Line
 	1750 5300 1850 5300
-Wire Wire Line
-	8950 3700 9050 3700
-Wire Wire Line
-	9350 4000 9750 4000
-Wire Wire Line
-	9750 3700 9850 3700
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5BB9264A
@@ -815,17 +738,6 @@ F 1 "Conn_01x04_Female" H 8627 5435 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8600 5550 50  0001 C CNN
 F 3 "~" H 8600 5550 50  0001 C CNN
 	1    8600 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:LD1117S50TR_SOT223 U5
-U 1 1 5BB92DDF
-P 9350 3700
-F 0 "U5" H 9350 3942 50  0000 C CNN
-F 1 "LD1117S50TR_SOT223" H 9350 3851 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 9350 3900 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 9450 3450 50  0001 C CNN
-	1    9350 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -895,18 +807,126 @@ F0 "PIC16LF1509" 50
 F1 "PIC.sch" 50
 F2 "PWM1" B L 5650 4500 50 
 F3 "PWM2" B L 5650 4600 50 
-F4 "PWM3" B L 5650 4700 50 
-F5 "PWM4" B L 5650 4800 50 
-F6 "SDA" B L 5650 5000 50 
-F7 "SCL" B L 5650 5100 50 
-F8 "A2" B L 5650 5250 50 
-F9 "B2" B L 5650 5350 50 
-F10 "A1" B L 5650 5450 50 
-F11 "B1" B L 5650 5550 50 
-F12 "MCLR" B R 7050 4500 50 
-F13 "ICSP_CLK" B R 7050 4600 50 
-F14 "ISCP_DAT" B R 7050 4700 50 
+F4 "SDA" B L 5650 5000 50 
+F5 "SCL" B L 5650 5100 50 
+F6 "A2" B L 5650 5250 50 
+F7 "B2" B L 5650 5350 50 
+F8 "A1" B L 5650 5450 50 
+F9 "B1" B L 5650 5550 50 
+F10 "MCLR" B R 7050 4500 50 
+F11 "ICSP_CLK" B R 7050 4600 50 
+F12 "ISCP_DAT" B R 7050 4700 50 
+F13 "EN1" B R 7050 4950 50 
+F14 "EN2" B R 7050 5050 50 
+F15 "DIR1" B R 7050 5150 50 
+F16 "DIR2" B R 7050 5250 50 
+F17 "error" I R 7050 5350 50 
+F18 "Bonus" B R 7050 5950 50 
 $EndSheet
-NoConn ~ 5650 4700
-NoConn ~ 5650 4800
+NoConn ~ 6950 2150
+NoConn ~ 6950 2250
+NoConn ~ 6950 2450
+NoConn ~ 5950 2150
+Text GLabel 7050 5350 2    50   Input ~ 0
+ERROR
+Text GLabel 4650 2800 2    50   Output ~ 0
+ERROR
+Wire Wire Line
+	4250 2750 4550 2750
+Wire Wire Line
+	4550 2750 4550 2800
+Wire Wire Line
+	4550 2800 4650 2800
+Wire Wire Line
+	4250 2850 4550 2850
+Wire Wire Line
+	4550 2850 4550 2800
+Connection ~ 4550 2800
+$Comp
+L Device:R_Small R?
+U 1 1 5BF0446F
+P 4550 2950
+AR Path="/5BC60BBF/5BF0446F" Ref="R?"  Part="1" 
+AR Path="/5BF0446F" Ref="R4"  Part="1" 
+F 0 "R4" H 4580 2970 50  0000 L CNN
+F 1 "10k" H 4580 2910 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4550 2950 50  0001 C CNN
+F 3 "" H 4550 2950 50  0001 C CNN
+	1    4550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5BF07378
+P 4550 3050
+F 0 "#PWR028" H 4550 2800 50  0001 C CNN
+F 1 "GND" H 4550 2900 50  0000 C CNN
+F 2 "" H 4550 3050 50  0001 C CNN
+F 3 "" H 4550 3050 50  0001 C CNN
+	1    4550 3050
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 8900 3500 550  300 
+U 5BF32AF1
+F0 "DC-DC-5.0V" 50
+F1 "AP1509-50.sch" 50
+F2 "Vin" I L 8900 3650 50 
+F3 "Vout" O R 9450 3650 50 
+$EndSheet
+Text GLabel 8900 3650 0    60   Input ~ 0
+BAT-PROT+
+$Comp
+L power:+5V #PWR0102
+U 1 1 5BF35E39
+P 9450 3650
+F 0 "#PWR0102" H 9450 3500 50  0001 C CNN
+F 1 "+5V" H 9450 3790 50  0000 C CNN
+F 2 "" H 9450 3650 50  0001 C CNN
+F 3 "" H 9450 3650 50  0001 C CNN
+	1    9450 3650
+	0    1    1    0   
+$EndComp
+NoConn ~ 450  4200
+$Comp
+L Device:LED D5
+U 1 1 5BF44C8B
+P 7300 6250
+F 0 "D5" H 7292 5995 50  0000 C CNN
+F 1 "GREEN" H 7300 6400 50  0000 C CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 7300 6250 50  0001 C CNN
+F 3 "~" H 7300 6250 50  0001 C CNN
+	1    7300 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5BF44DFF
+P 7550 6250
+F 0 "#PWR016" H 7550 6000 50  0001 C CNN
+F 1 "GND" H 7550 6100 50  0000 C CNN
+F 2 "" H 7550 6250 50  0001 C CNN
+F 3 "" H 7550 6250 50  0001 C CNN
+	1    7550 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 6250 7450 6250
+$Comp
+L Device:R_Small R?
+U 1 1 5BF49FB3
+P 7150 6050
+AR Path="/5BC60BBF/5BF49FB3" Ref="R?"  Part="1" 
+AR Path="/5BF49FB3" Ref="R6"  Part="1" 
+F 0 "R6" H 7180 6070 50  0000 L CNN
+F 1 "50" H 7180 6010 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7150 6050 50  0001 C CNN
+F 3 "" H 7150 6050 50  0001 C CNN
+	1    7150 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 6250 7150 6150
+Wire Wire Line
+	7150 5950 7050 5950
 $EndSCHEMATC

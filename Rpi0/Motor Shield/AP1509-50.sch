@@ -1,0 +1,206 @@
+EESchema Schematic File Version 4
+LIBS:Motor Shield-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 5600 3350 0    50   Input ~ 0
+Vin
+Text HLabel 7500 3350 2    50   Output ~ 0
+Vout
+$Comp
+L Rob-5:ACT4060A U6
+U 1 1 5BF33465
+P 6200 3450
+F 0 "U6" H 6000 3850 50  0000 C CNN
+F 1 "ACT4060A" H 5950 3750 50  0000 C CNN
+F 2 "Package_SO:SSOP-8_3.95x5.21x3.27mm_P1.27mm" H 6200 3300 50  0001 C CNN
+F 3 "" H 6200 3300 50  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BF334BD
+P 6150 4650
+F 0 "#PWR0101" H 6150 4400 50  0001 C CNN
+F 1 "GND" H 6155 4477 50  0000 C CNN
+F 2 "" H 6150 4650 50  0001 C CNN
+F 3 "" H 6150 4650 50  0001 C CNN
+	1    6150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C11
+U 1 1 5BF33540
+P 5650 4050
+F 0 "C11" H 5768 4096 50  0000 L CNN
+F 1 "10uF" H 5768 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5688 3900 50  0001 C CNN
+F 3 "~" H 5650 4050 50  0001 C CNN
+	1    5650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5BF335AC
+P 6750 3200
+F 0 "C13" H 6865 3246 50  0000 L CNN
+F 1 "10nF" H 6865 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6788 3050 50  0001 C CNN
+F 3 "~" H 6750 3200 50  0001 C CNN
+	1    6750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D4
+U 1 1 5BF33616
+P 7000 4100
+F 0 "D4" V 6954 4179 50  0000 L CNN
+F 1 "40V" V 7045 4179 50  0000 L CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 7000 4100 50  0001 C CNN
+F 3 "~" H 7000 4100 50  0001 C CNN
+	1    7000 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BF3364D
+P 6750 3700
+F 0 "R3" H 6820 3746 50  0000 L CNN
+F 1 "10k" H 6820 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6680 3700 50  0001 C CNN
+F 3 "~" H 6750 3700 50  0001 C CNN
+	1    6750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5BF336C3
+P 7200 3350
+F 0 "L1" V 7390 3350 50  0000 C CNN
+F 1 "15uH" V 7299 3350 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 7200 3350 50  0001 C CNN
+F 3 "~" H 7200 3350 50  0001 C CNN
+	1    7200 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5BF34574
+P 7350 3550
+F 0 "R5" V 7143 3550 50  0000 C CNN
+F 1 "28.7k" V 7234 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7280 3550 50  0001 C CNN
+F 3 "~" H 7350 3550 50  0001 C CNN
+	1    7350 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5BF34658
+P 6300 4100
+F 0 "C12" H 6415 4146 50  0000 L CNN
+F 1 "2.2nF" H 6415 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6338 3950 50  0001 C CNN
+F 3 "~" H 6300 4100 50  0001 C CNN
+	1    6300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BF346A4
+P 6300 4500
+F 0 "R2" H 6370 4546 50  0000 L CNN
+F 1 "15k" H 6370 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6230 4500 50  0001 C CNN
+F 3 "~" H 6300 4500 50  0001 C CNN
+	1    6300 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3850 6100 4650
+Wire Wire Line
+	6300 4350 6300 4250
+Wire Wire Line
+	6300 3950 6300 3850
+Connection ~ 6150 4650
+Wire Wire Line
+	5750 3350 5650 3350
+Wire Wire Line
+	5650 3350 5650 3900
+Connection ~ 5650 3350
+Wire Wire Line
+	5650 3350 5600 3350
+Wire Wire Line
+	5650 4200 5650 4650
+Wire Wire Line
+	5650 4650 6100 4650
+Wire Wire Line
+	6750 3850 6750 4650
+Wire Wire Line
+	6750 4650 6300 4650
+Wire Wire Line
+	6650 3550 6750 3550
+Wire Wire Line
+	6750 3550 7200 3550
+Connection ~ 6750 3550
+$Comp
+L Device:C C14
+U 1 1 5BF34AE3
+P 7500 4100
+F 0 "C14" H 7615 4146 50  0000 L CNN
+F 1 "22uF" H 7615 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7538 3950 50  0001 C CNN
+F 3 "~" H 7500 4100 50  0001 C CNN
+	1    7500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3350 7500 3550
+Wire Wire Line
+	7500 3550 7500 3950
+Connection ~ 7500 3550
+Wire Wire Line
+	7500 4250 7500 4650
+Connection ~ 6750 4650
+Wire Wire Line
+	7500 3350 7350 3350
+Wire Wire Line
+	6750 3350 6650 3350
+Connection ~ 6750 3350
+Wire Wire Line
+	6750 3050 6200 3050
+Wire Wire Line
+	6750 4650 7000 4650
+Wire Wire Line
+	6750 3350 7000 3350
+Wire Wire Line
+	7000 3350 7000 3950
+Connection ~ 7000 3350
+Wire Wire Line
+	7000 3350 7050 3350
+Wire Wire Line
+	7000 4250 7000 4650
+Connection ~ 7000 4650
+Wire Wire Line
+	7000 4650 7500 4650
+NoConn ~ 5750 3550
+Connection ~ 6300 4650
+Wire Wire Line
+	6150 4650 6300 4650
+Connection ~ 6100 4650
+Wire Wire Line
+	6100 4650 6150 4650
+NoConn ~ 6200 3850
+$EndSCHEMATC
