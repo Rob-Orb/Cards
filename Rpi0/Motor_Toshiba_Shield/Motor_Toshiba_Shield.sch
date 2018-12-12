@@ -15,27 +15,37 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 3050 4800 1050 1600
+S 4750 4750 1050 1600
 U 5BC5D1BA
-F0 "PIC16LF1509" 50
+F0 "PIC16F1777" 50
 F1 "PIC.sch" 50
-F2 "PWM1" B L 3050 4900 50 
-F3 "PWM2" B L 3050 5000 50 
-F4 "PWM3" B L 3050 5100 50 
-F5 "PWM4" B L 3050 5200 50 
-F6 "SDA" B L 3050 5400 50 
-F7 "SCL" B L 3050 5500 50 
-F8 "A2" B L 3050 5650 50 
-F9 "B2" B L 3050 5750 50 
-F10 "A1" B L 3050 5850 50 
-F11 "B1" B L 3050 5950 50 
-F12 "MCLR" B R 4100 4850 50 
-F13 "ICSP_CLK" B R 4100 4950 50 
-F14 "ISCP_DAT" B R 4100 5050 50 
-F15 "A3" B L 3050 6050 50 
-F16 "A4" B L 3050 6250 50 
-F17 "B3" B L 3050 6150 50 
-F18 "B4" B L 3050 6350 50 
+F2 "PWM1" B L 4750 4850 50 
+F3 "PWM2" B L 4750 4950 50 
+F4 "PWM3" B L 4750 5050 50 
+F5 "PWM4" B L 4750 5150 50 
+F6 "SDA" B L 4750 5350 50 
+F7 "SCL" B L 4750 5450 50 
+F8 "A2" B L 4750 5600 50 
+F9 "B2" B L 4750 5700 50 
+F10 "A1" B L 4750 5800 50 
+F11 "B1" B L 4750 5900 50 
+F12 "MCLR" B R 5800 4800 50 
+F13 "ICSP_CLK" B R 5800 4900 50 
+F14 "ISCP_DAT" B R 5800 5000 50 
+F15 "A3" B L 4750 6000 50 
+F16 "A4" B L 4750 6200 50 
+F17 "B3" B L 4750 6100 50 
+F18 "B4" B L 4750 6300 50 
+F19 "INA3" B R 5800 5200 50 
+F20 "INB3" B R 5800 5300 50 
+F21 "INA4" B R 5800 5400 50 
+F22 "INB4" B R 5800 5500 50 
+F23 "INA1" B R 5800 5650 50 
+F24 "INB1" B R 5800 5750 50 
+F25 "INA2" B R 5800 5850 50 
+F26 "INB2" B R 5800 5950 50 
+F27 "EN2" B R 5800 6100 50 
+F28 "EN1" B R 5800 6200 50 
 $EndSheet
 $Comp
 L Connector:Screw_Terminal_01x02 J1
@@ -186,26 +196,26 @@ F 3 "https://toshiba.semicon-storage.com/us/product/linear/motordriver/detail.TB
 	1    9300 4950
 	1    0    0    -1  
 $EndComp
-Text GLabel 4200 5050 2    50   BiDi ~ 0
+Text GLabel 5900 5000 2    50   BiDi ~ 0
 ICSP_DAT
-Text GLabel 4200 4950 2    50   BiDi ~ 0
+Text GLabel 5900 4900 2    50   BiDi ~ 0
 ICSP_CLK
-Text GLabel 4200 4850 2    50   BiDi ~ 0
+Text GLabel 5900 4800 2    50   BiDi ~ 0
 MCLR
-Text GLabel 2950 5500 0    50   BiDi ~ 0
+Text GLabel 4650 5450 0    50   BiDi ~ 0
 SCL
-Text GLabel 2950 5400 0    50   BiDi ~ 0
+Text GLabel 4650 5350 0    50   BiDi ~ 0
 SDA
 Wire Wire Line
-	3050 5400 2950 5400
+	4750 5350 4650 5350
 Wire Wire Line
-	2950 5500 3050 5500
+	4650 5450 4750 5450
 Wire Wire Line
-	4100 4850 4200 4850
+	5800 4800 5900 4800
 Wire Wire Line
-	4200 4950 4100 4950
+	5900 4900 5800 4900
 Wire Wire Line
-	4100 5050 4200 5050
+	5800 5000 5900 5000
 Text GLabel 2150 1200 0    50   Input ~ 0
 BAT+
 Text GLabel 2150 1300 0    50   Input ~ 0
@@ -287,22 +297,22 @@ F 3 "" H 6900 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 1000 6900 1000
-Text GLabel 2950 4900 0    50   BiDi ~ 0
+Text GLabel 4650 4850 0    50   BiDi ~ 0
 PWM1
-Text GLabel 2950 5000 0    50   BiDi ~ 0
+Text GLabel 4650 4950 0    50   BiDi ~ 0
 PWM2
-Text GLabel 2950 5100 0    50   BiDi ~ 0
+Text GLabel 4650 5050 0    50   BiDi ~ 0
 PWM3
-Text GLabel 2950 5200 0    50   BiDi ~ 0
+Text GLabel 4650 5150 0    50   BiDi ~ 0
 PWM4
 Wire Wire Line
-	3050 4900 2950 4900
+	4750 4850 4650 4850
 Wire Wire Line
-	2950 5000 3050 5000
+	4650 4950 4750 4950
 Wire Wire Line
-	3050 5100 2950 5100
+	4750 5050 4650 5050
 Wire Wire Line
-	2950 5200 3050 5200
+	4650 5150 4750 5150
 Text GLabel 8650 2000 0    50   BiDi ~ 0
 PWM1
 Text GLabel 8650 2100 0    50   BiDi ~ 0
@@ -563,62 +573,6 @@ Connection ~ 9450 3200
 Wire Wire Line
 	9550 3200 9650 3200
 Connection ~ 9550 3200
-$Comp
-L microchip:MCP23008_SSOP U3
-U 1 1 5BC93B70
-P 5700 5450
-F 0 "U3" H 5700 6228 50  0000 C CNN
-F 1 "MCP23008_SSOP" H 5700 6137 50  0000 C CNN
-F 2 "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm" H 5750 4800 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21919e.pdf" H 5950 6050 50  0001 C CNN
-	1    5700 5450
-	-1   0    0    -1  
-$EndComp
-Text GLabel 5100 5550 0    50   BiDi ~ 0
-SDA
-Text GLabel 5100 5450 0    50   BiDi ~ 0
-SCL
-Wire Wire Line
-	5200 5450 5100 5450
-Wire Wire Line
-	5100 5550 5200 5550
-$Comp
-L power:+3.3V #PWR010
-U 1 1 5BC9B7F2
-P 5700 4750
-F 0 "#PWR010" H 5700 4600 50  0001 C CNN
-F 1 "+3.3V" V 5715 4878 50  0000 L CNN
-F 2 "" H 5700 4750 50  0001 C CNN
-F 3 "" H 5700 4750 50  0001 C CNN
-	1    5700 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 4750 5700 4850
-$Comp
-L power:GND #PWR011
-U 1 1 5BC9D872
-P 5700 6250
-F 0 "#PWR011" H 5700 6000 50  0001 C CNN
-F 1 "GND" H 5705 6077 50  0000 C CNN
-F 2 "" H 5700 6250 50  0001 C CNN
-F 3 "" H 5700 6250 50  0001 C CNN
-	1    5700 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 6250 5700 6150
-$Comp
-L power:+3.3V #PWR09
-U 1 1 5BC9F897
-P 4800 6050
-F 0 "#PWR09" H 4800 5900 50  0001 C CNN
-F 1 "+3.3V" V 4815 6178 50  0000 L CNN
-F 2 "" H 4800 6050 50  0001 C CNN
-F 3 "" H 4800 6050 50  0001 C CNN
-	1    4800 6050
-	-1   0    0    1   
-$EndComp
 Text GLabel 8650 2300 0    50   BiDi ~ 0
 INA1
 Text GLabel 8650 2400 0    50   BiDi ~ 0
@@ -651,55 +605,42 @@ Wire Wire Line
 	8750 2500 8650 2500
 Wire Wire Line
 	8650 2600 8750 2600
-Text GLabel 6300 5150 2    50   BiDi ~ 0
+Text GLabel 5900 5650 2    50   BiDi ~ 0
 INA1
-Text GLabel 6300 5250 2    50   BiDi ~ 0
+Text GLabel 5900 5850 2    50   BiDi ~ 0
 INA2
-Text GLabel 6300 5350 2    50   BiDi ~ 0
+Text GLabel 5900 5750 2    50   BiDi ~ 0
 INB1
-Text GLabel 6300 5450 2    50   BiDi ~ 0
+Text GLabel 5900 5950 2    50   BiDi ~ 0
 INB2
-Text GLabel 6300 5550 2    50   BiDi ~ 0
+Text GLabel 5900 5200 2    50   BiDi ~ 0
 INA3
-Text GLabel 6300 5650 2    50   BiDi ~ 0
+Text GLabel 5900 5400 2    50   BiDi ~ 0
 INA4
-Text GLabel 6300 5750 2    50   BiDi ~ 0
+Text GLabel 5900 5300 2    50   BiDi ~ 0
 INB3
-Text GLabel 6300 5850 2    50   BiDi ~ 0
+Text GLabel 5900 5500 2    50   BiDi ~ 0
 INB4
 Wire Wire Line
-	6300 5150 6200 5150
+	5900 5650 5800 5650
 Wire Wire Line
-	6200 5250 6300 5250
+	5800 5750 5900 5750
 Wire Wire Line
-	6300 5350 6200 5350
+	5900 5850 5800 5850
 Wire Wire Line
-	6200 5450 6300 5450
+	5800 5950 5900 5950
 Wire Wire Line
-	6300 5550 6200 5550
+	5900 5200 5800 5200
 Wire Wire Line
-	6200 5650 6300 5650
+	5800 5300 5900 5300
 Wire Wire Line
-	6300 5750 6200 5750
+	5900 5400 5800 5400
 Wire Wire Line
-	6200 5850 6300 5850
-NoConn ~ 5200 5150
-Text GLabel 5100 2400 0    50   BiDi ~ 0
+	5800 5500 5900 5500
+Text GLabel 5900 6200 2    50   BiDi ~ 0
 EN1
-Text GLabel 5100 2500 0    50   BiDi ~ 0
+Text GLabel 5900 6100 2    50   BiDi ~ 0
 EN2
-Text GLabel 5100 1300 0    50   BiDi ~ 0
-RES
-Wire Wire Line
-	5200 1300 5100 1300
-Wire Wire Line
-	5200 2400 5100 2400
-Wire Wire Line
-	5100 2500 5200 2500
-Text GLabel 5100 5050 0    50   BiDi ~ 0
-RES
-Wire Wire Line
-	5200 5050 5100 5050
 Text GLabel 8650 1800 0    50   BiDi ~ 0
 EN1
 Wire Wire Line
@@ -796,13 +737,13 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J6
 U 1 1 5BD27C1E
-P 10250 2400
-F 0 "J6" H 10330 2392 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 10330 2301 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 10250 2400 50  0001 C CNN
-F 3 "~" H 10250 2400 50  0001 C CNN
-	1    10250 2400
-	1    0    0    -1  
+P 10250 2500
+F 0 "J6" H 10330 2492 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 10330 2401 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 10250 2500 50  0001 C CNN
+F 3 "~" H 10250 2500 50  0001 C CNN
+	1    10250 2500
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J3
@@ -818,13 +759,13 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J4
 U 1 1 5BD27DA5
-P 10200 5150
-F 0 "J4" H 10280 5142 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 10280 5051 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 10200 5150 50  0001 C CNN
-F 3 "~" H 10200 5150 50  0001 C CNN
-	1    10200 5150
-	1    0    0    -1  
+P 10200 5250
+F 0 "J4" H 10280 5242 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 10280 5151 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal" H 10200 5250 50  0001 C CNN
+F 3 "~" H 10200 5250 50  0001 C CNN
+	1    10200 5250
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	10000 4650 9900 4650
@@ -883,53 +824,6 @@ Wire Wire Line
 	9650 1200 10500 1200
 Wire Wire Line
 	9600 3950 10450 3950
-Wire Wire Line
-	5200 5950 5100 5950
-Wire Wire Line
-	5100 5850 5200 5850
-Wire Wire Line
-	5200 5750 5100 5750
-Wire Wire Line
-	4800 5750 4800 5850
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5BE1B8CD
-P 4950 5750
-F 0 "JP1" H 4950 5955 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4950 5864 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4950 5750 50  0001 C CNN
-F 3 "~" H 4950 5750 50  0001 C CNN
-	1    4950 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP2
-U 1 1 5BE1B921
-P 4950 5850
-F 0 "JP2" H 4950 6055 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4950 5964 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4950 5850 50  0001 C CNN
-F 3 "~" H 4950 5850 50  0001 C CNN
-	1    4950 5850
-	1    0    0    -1  
-$EndComp
-Connection ~ 4800 5850
-Wire Wire Line
-	4800 5850 4800 5950
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 5BE1B967
-P 4950 5950
-F 0 "JP3" H 4950 6155 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4950 6064 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 4950 5950 50  0001 C CNN
-F 3 "~" H 4950 5950 50  0001 C CNN
-	1    4950 5950
-	1    0    0    -1  
-$EndComp
-Connection ~ 4800 5950
-Wire Wire Line
-	4800 5950 4800 6050
 $Comp
 L Connector:Conn_01x04_Female J8
 U 1 1 5BE223D6
@@ -996,21 +890,21 @@ F 3 "" H 1050 5150 50  0001 C CNN
 	1    1050 5150
 	0    1    1    0   
 $EndComp
-Text GLabel 2950 5650 0    50   BiDi ~ 0
+Text GLabel 4650 5600 0    50   BiDi ~ 0
 A2
-Text GLabel 2950 5750 0    50   BiDi ~ 0
+Text GLabel 4650 5700 0    50   BiDi ~ 0
 B2
-Text GLabel 2950 5850 0    50   BiDi ~ 0
+Text GLabel 4650 5800 0    50   BiDi ~ 0
 A1
-Text GLabel 2950 5950 0    50   BiDi ~ 0
+Text GLabel 4650 5900 0    50   BiDi ~ 0
 B1
-Text GLabel 2950 6050 0    50   BiDi ~ 0
+Text GLabel 4650 6000 0    50   BiDi ~ 0
 A3
-Text GLabel 2950 6150 0    50   BiDi ~ 0
+Text GLabel 4650 6100 0    50   BiDi ~ 0
 B3
-Text GLabel 2950 6250 0    50   BiDi ~ 0
+Text GLabel 4650 6200 0    50   BiDi ~ 0
 A4
-Text GLabel 2950 6350 0    50   BiDi ~ 0
+Text GLabel 4650 6300 0    50   BiDi ~ 0
 B4
 Text GLabel 1050 5400 0    50   BiDi ~ 0
 A2
@@ -1029,21 +923,21 @@ A4
 Text GLabel 1050 6400 0    50   BiDi ~ 0
 B4
 Wire Wire Line
-	3050 5650 2950 5650
+	4750 5600 4650 5600
 Wire Wire Line
-	2950 5750 3050 5750
+	4650 5700 4750 5700
 Wire Wire Line
-	3050 5850 2950 5850
+	4750 5800 4650 5800
 Wire Wire Line
-	2950 5950 3050 5950
+	4650 5900 4750 5900
 Wire Wire Line
-	3050 6050 2950 6050
+	4750 6000 4650 6000
 Wire Wire Line
-	2950 6150 3050 6150
+	4650 6100 4750 6100
 Wire Wire Line
-	3050 6250 2950 6250
+	4750 6200 4650 6200
 Wire Wire Line
-	2950 6350 3050 6350
+	4650 6300 4750 6300
 $Comp
 L power:+5V #PWR031
 U 1 1 5BE5D267
@@ -1146,4 +1040,11 @@ NoConn ~ 6200 2600
 NoConn ~ 6200 2400
 NoConn ~ 5200 2200
 NoConn ~ 5200 1400
+Wire Wire Line
+	5900 6100 5800 6100
+Wire Wire Line
+	5800 6200 5900 6200
+NoConn ~ 5200 2400
+NoConn ~ 5200 2500
+NoConn ~ 5200 1300
 $EndSCHEMATC

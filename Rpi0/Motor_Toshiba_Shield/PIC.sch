@@ -14,189 +14,237 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 8100 4100
-$Comp
-L power:GND #PWR028
-U 1 1 5BC60E5E
-P 5900 4800
-F 0 "#PWR028" H 5900 4550 50  0001 C CNN
-F 1 "GND" H 5900 4650 50  0000 C CNN
-F 2 "" H 5900 4800 50  0001 C CNN
-F 3 "" H 5900 4800 50  0001 C CNN
-	1    5900 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR025
-U 1 1 5BC60E66
-P 2750 3300
-F 0 "#PWR025" H 2750 3150 50  0001 C CNN
-F 1 "+3.3V" H 2750 3440 50  0000 C CNN
-F 2 "" H 2750 3300 50  0001 C CNN
-F 3 "" H 2750 3300 50  0001 C CNN
-	1    2750 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 5BC60E6C
-P 2750 3500
-F 0 "R2" H 2780 3520 50  0000 L CNN
-F 1 "10k" H 2780 3460 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2750 3500 50  0001 C CNN
-F 3 "" H 2750 3500 50  0001 C CNN
-	1    2750 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C11
-U 1 1 5BC60E73
-P 2750 3900
-F 0 "C11" H 2760 3970 50  0000 L CNN
-F 1 "1uF" H 2760 3820 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 2750 3900 50  0001 C CNN
-F 3 "" H 2750 3900 50  0001 C CNN
-	1    2750 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5BC60E7A
-P 3000 3700
-F 0 "R3" H 3030 3720 50  0000 L CNN
-F 1 "470" H 3030 3660 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 3000 3700 50  0001 C CNN
-F 3 "" H 3000 3700 50  0001 C CNN
-	1    3000 3700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8200 3700 8100 3700
-Wire Wire Line
-	8200 3900 8100 3900
-Wire Wire Line
-	3700 4100 3600 4100
-Wire Wire Line
-	3600 4300 3700 4300
-Wire Wire Line
-	5900 3000 5900 3100
-Wire Wire Line
-	5900 4800 5900 4700
-Wire Wire Line
-	3700 3400 3600 3400
-Wire Wire Line
-	3600 3500 3700 3500
-Wire Wire Line
-	3100 3700 3700 3700
-Wire Wire Line
-	2750 3300 2750 3400
-Wire Wire Line
-	2750 3600 2750 3700
-Wire Wire Line
-	2900 3700 2750 3700
-Connection ~ 2750 3700
-$Comp
-L power:GND #PWR026
-U 1 1 5BC60E8E
-P 2750 4100
-F 0 "#PWR026" H 2750 3850 50  0001 C CNN
-F 1 "GND" H 2750 3950 50  0000 C CNN
-F 2 "" H 2750 4100 50  0001 C CNN
-F 3 "" H 2750 4100 50  0001 C CNN
-	1    2750 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 4000 2750 4100
-Wire Wire Line
-	3600 3400 3600 3300
-Wire Wire Line
-	3700 3800 3600 3800
-Wire Wire Line
-	3600 3900 3700 3900
-Wire Wire Line
-	3700 4200 3600 4200
-Wire Wire Line
-	3600 4400 3700 4400
-Wire Wire Line
-	2750 3700 2750 3800
-$Comp
-L MCU_Microchip_PIC16:PIC16F1509-ISS U6
-U 1 1 5BC60EA6
-P 5900 3900
-F 0 "U6" H 5900 4878 50  0000 C CNN
-F 1 "PIC16F1509-ISS" H 5900 4787 50  0000 C CNN
-F 2 "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm" H 5900 3900 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41609A.pdf" H 5900 3900 50  0001 C CNN
-	1    5900 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x01 J7
-U 1 1 5BC60EAD
-P 3600 3000
-F 0 "J7" V 3604 3080 50  0000 L CNN
-F 1 "Conn_02x01" V 3695 3080 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 3600 3000 50  0001 C CNN
-F 3 "~" H 3600 3000 50  0001 C CNN
-	1    3600 3000
-	0    1    1    0   
-$EndComp
-Text HLabel 8200 3900 2    50   BiDi ~ 0
+Text HLabel 5800 4300 3    50   BiDi ~ 0
 PWM1
-Text HLabel 8200 3700 2    50   BiDi ~ 0
+Text HLabel 5900 4300 3    50   BiDi ~ 0
 PWM2
-Text HLabel 3600 3600 0    50   BiDi ~ 0
+Text HLabel 6000 4300 3    50   BiDi ~ 0
 PWM3
-Text HLabel 8200 3500 2    50   BiDi ~ 0
+Text HLabel 5700 4300 3    50   BiDi ~ 0
 PWM4
-Wire Wire Line
-	8200 3500 8100 3500
-Wire Wire Line
-	3700 3600 3600 3600
-Text HLabel 3600 4100 0    50   BiDi ~ 0
+Text HLabel 5200 2500 1    50   BiDi ~ 0
 SDA
-Text HLabel 3600 4300 0    50   BiDi ~ 0
+Text HLabel 5700 2500 1    50   BiDi ~ 0
 SCL
+Text HLabel 6550 3100 2    50   BiDi ~ 0
+A2
+Text HLabel 6550 3200 2    50   BiDi ~ 0
+B2
+Text HLabel 6550 3900 2    50   BiDi ~ 0
+A1
+Text HLabel 6550 3800 2    50   BiDi ~ 0
+B1
+Text HLabel 5600 4300 3    50   BiDi ~ 0
+MCLR
+Text HLabel 5400 4300 3    50   BiDi ~ 0
+ICSP_CLK
+Text HLabel 5500 4600 3    50   BiDi ~ 0
+ISCP_DAT
+Text HLabel 4450 3600 0    50   BiDi ~ 0
+A3
+Text HLabel 4450 3800 0    50   BiDi ~ 0
+A4
+Text HLabel 4450 3700 0    50   BiDi ~ 0
+B3
+Text HLabel 4450 3900 0    50   BiDi ~ 0
+B4
 $Comp
-L power:+3.3V #PWR027
-U 1 1 5BC60E97
-P 5900 3000
-F 0 "#PWR027" H 5900 2850 50  0001 C CNN
-F 1 "+3.3V" H 5900 3140 50  0000 C CNN
-F 2 "" H 5900 3000 50  0001 C CNN
-F 3 "" H 5900 3000 50  0001 C CNN
-	1    5900 3000
+L Rob-5:PIC16F1777-TQFP U3
+U 1 1 5C11A5F8
+P 5500 3400
+F 0 "U3" H 6550 4150 50  0000 L CNN
+F 1 "PIC16F1777-TQFP" H 6350 4050 50  0000 L CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 5500 3400 50  0001 C CNN
+F 3 "" H 5500 3400 50  0001 C CNN
+	1    5500 3400
 	1    0    0    -1  
 $EndComp
-Text HLabel 3600 4200 0    50   BiDi ~ 0
-A2
-Text HLabel 3600 4400 0    50   BiDi ~ 0
-B2
-Text HLabel 3600 3800 0    50   BiDi ~ 0
-A1
-Text HLabel 3600 3900 0    50   BiDi ~ 0
-B1
-Text HLabel 3300 3700 3    50   BiDi ~ 0
-MCLR
-Text HLabel 3600 3500 0    50   BiDi ~ 0
-ICSP_CLK
-Text HLabel 3600 2800 1    50   BiDi ~ 0
-ISCP_DAT
-Text HLabel 8200 3400 2    50   BiDi ~ 0
-A3
-Text HLabel 8200 3600 2    50   BiDi ~ 0
-A4
-Text HLabel 8200 3800 2    50   BiDi ~ 0
-B3
-Text HLabel 8200 4000 2    50   BiDi ~ 0
-B4
 Wire Wire Line
-	8200 4000 8100 4000
+	5700 2500 5700 2600
 Wire Wire Line
-	8200 3800 8100 3800
+	5200 2500 5200 2600
 Wire Wire Line
-	8200 3600 8100 3600
+	5400 4300 5400 4200
 Wire Wire Line
-	8200 3400 8100 3400
+	5500 4300 5500 4200
+Wire Wire Line
+	5600 4300 5600 4200
+$Comp
+L power:+3.3V #PWR011
+U 1 1 5C124353
+P 6550 3400
+F 0 "#PWR011" H 6550 3250 50  0001 C CNN
+F 1 "+3.3V" H 6550 3540 50  0000 C CNN
+F 2 "" H 6550 3400 50  0001 C CNN
+F 3 "" H 6550 3400 50  0001 C CNN
+	1    6550 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5C12440E
+P 6550 3300
+F 0 "#PWR010" H 6550 3050 50  0001 C CNN
+F 1 "GND" H 6550 3150 50  0000 C CNN
+F 2 "" H 6550 3300 50  0001 C CNN
+F 3 "" H 6550 3300 50  0001 C CNN
+	1    6550 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 3300 6450 3300
+Wire Wire Line
+	6450 3400 6550 3400
+NoConn ~ 6450 2900
+NoConn ~ 5000 4200
+NoConn ~ 5100 4200
+Wire Wire Line
+	5700 4300 5700 4200
+Wire Wire Line
+	5800 4300 5800 4200
+Wire Wire Line
+	5900 4300 5900 4200
+Wire Wire Line
+	6000 4300 6000 4200
+Text HLabel 4450 3000 0    50   BiDi ~ 0
+INA3
+Text HLabel 4450 3200 0    50   BiDi ~ 0
+INB3
+Text HLabel 4450 3100 0    50   BiDi ~ 0
+INA4
+Text HLabel 4450 3300 0    50   BiDi ~ 0
+INB4
+Text HLabel 5600 2500 1    50   BiDi ~ 0
+INA1
+Text HLabel 5400 2500 1    50   BiDi ~ 0
+INB1
+Text HLabel 5500 2500 1    50   BiDi ~ 0
+INA2
+Text HLabel 5300 2500 1    50   BiDi ~ 0
+INB2
+Wire Wire Line
+	5600 2600 5600 2500
+Wire Wire Line
+	5500 2600 5500 2500
+Wire Wire Line
+	5400 2600 5400 2500
+Wire Wire Line
+	5300 2600 5300 2500
+Wire Wire Line
+	6550 3100 6450 3100
+Wire Wire Line
+	6450 3200 6550 3200
+Wire Wire Line
+	6550 3800 6450 3800
+Wire Wire Line
+	6450 3900 6550 3900
+Wire Wire Line
+	4550 3600 4450 3600
+Wire Wire Line
+	4450 3700 4550 3700
+Wire Wire Line
+	4550 3800 4450 3800
+Wire Wire Line
+	4450 3900 4550 3900
+Wire Wire Line
+	4550 3300 4450 3300
+Wire Wire Line
+	4450 3200 4550 3200
+Wire Wire Line
+	4550 3100 4450 3100
+Wire Wire Line
+	4450 3000 4550 3000
+NoConn ~ 6000 2600
+NoConn ~ 5900 2600
+NoConn ~ 5800 2600
+NoConn ~ 5000 2600
+NoConn ~ 5100 2600
+NoConn ~ 4550 2900
+NoConn ~ 6450 3500
+NoConn ~ 6450 3000
+NoConn ~ 5300 4200
+$Comp
+L Device:R R2
+U 1 1 5C13C799
+P 5200 4450
+F 0 "R2" H 5270 4496 50  0000 L CNN
+F 1 "50" H 5270 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5130 4450 50  0001 C CNN
+F 3 "~" H 5200 4450 50  0001 C CNN
+	1    5200 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5C13C807
+P 5200 4850
+F 0 "D2" V 5238 4733 50  0000 R CNN
+F 1 "LED" V 5147 4733 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5200 4850 50  0001 C CNN
+F 3 "~" H 5200 4850 50  0001 C CNN
+	1    5200 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5C13C8CA
+P 5200 5100
+F 0 "#PWR09" H 5200 4850 50  0001 C CNN
+F 1 "GND" H 5200 4950 50  0000 C CNN
+F 2 "" H 5200 5100 50  0001 C CNN
+F 3 "" H 5200 5100 50  0001 C CNN
+	1    5200 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4200 5200 4300
+Wire Wire Line
+	5200 4600 5200 4700
+Wire Wire Line
+	5200 5000 5200 5100
+$Comp
+L power:GND #PWR06
+U 1 1 5C13FF45
+P 4450 3400
+F 0 "#PWR06" H 4450 3150 50  0001 C CNN
+F 1 "GND" H 4450 3250 50  0000 C CNN
+F 2 "" H 4450 3400 50  0001 C CNN
+F 3 "" H 4450 3400 50  0001 C CNN
+	1    4450 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR07
+U 1 1 5C13FF60
+P 4450 3500
+F 0 "#PWR07" H 4450 3350 50  0001 C CNN
+F 1 "+3.3V" H 4450 3640 50  0000 C CNN
+F 2 "" H 4450 3500 50  0001 C CNN
+F 3 "" H 4450 3500 50  0001 C CNN
+	1    4450 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 3400 4450 3400
+Wire Wire Line
+	4450 3500 4550 3500
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5C161765
+P 5500 4450
+F 0 "JP1" V 5454 4518 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 5545 4518 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5500 4450 50  0001 C CNN
+F 3 "~" H 5500 4450 50  0001 C CNN
+	1    5500 4450
+	0    1    1    0   
+$EndComp
+Text HLabel 6550 3600 2    50   BiDi ~ 0
+EN2
+Text HLabel 6550 3700 2    50   BiDi ~ 0
+EN1
+Wire Wire Line
+	6550 3600 6450 3600
+Wire Wire Line
+	6450 3700 6550 3700
 $EndSCHEMATC
