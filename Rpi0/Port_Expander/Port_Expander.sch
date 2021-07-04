@@ -1,0 +1,371 @@
+EESchema Schematic File Version 4
+LIBS:Port_Expander-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5150 4450 900  1600
+U 5BD19583
+F0 "PIC16LF1509" 50
+F1 "PIC.sch" 50
+F2 "MCLR" B L 5150 4500 50 
+F3 "ISCP_DAT" B L 5150 4600 50 
+F4 "RB5" B R 6050 4900 50 
+F5 "RB7" B R 6050 5000 50 
+F6 "RC0" B R 6050 5100 50 
+F7 "RC1" B R 6050 5200 50 
+F8 "RC2" B R 6050 5300 50 
+F9 "RC3" B R 6050 5400 50 
+F10 "RC4" B R 6050 5500 50 
+F11 "RC5" B R 6050 5600 50 
+F12 "RC6" B R 6050 5700 50 
+F13 "RC7" B R 6050 5800 50 
+F14 "SDA" B L 5150 4800 50 
+F15 "SCL" B L 5150 4900 50 
+F16 "ISCP_CLK" B L 5150 4700 50 
+F17 "RA2" B R 6050 4600 50 
+F18 "RA4" B R 6050 4700 50 
+F19 "RA5" B R 6050 4800 50 
+$EndSheet
+$Comp
+L Rob-5:RPI0-Template U1
+U 1 1 5BD19846
+P 5500 2200
+F 0 "U1" H 5500 3415 50  0000 C CNN
+F 1 "RPI0-Template" H 5500 3324 50  0000 C CNN
+F 2 "Rob-5.0:RPi0_Template" H 5500 2950 50  0001 C CNN
+F 3 "" H 5500 2950 50  0001 C CNN
+	1    5500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x10 J4
+U 1 1 5BD19AE5
+P 6450 1650
+F 0 "J4" H 6369 925 50  0000 C CNN
+F 1 "Screw_Terminal_01x10" H 6369 1016 50  0000 C CNN
+F 2 "Rob-5.0:TerminalBlock_Phoenix_MKDS-1,5-10-3.5-H_1x10_P3.50mm_Horizontal" H 6450 1650 50  0001 C CNN
+F 3 "~" H 6450 1650 50  0001 C CNN
+	1    6450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x10 J5
+U 1 1 5BD19B3D
+P 6450 2650
+F 0 "J5" H 6369 1925 50  0000 C CNN
+F 1 "Screw_Terminal_01x10" H 6369 2016 50  0000 C CNN
+F 2 "Rob-5.0:TerminalBlock_Phoenix_MKDS-1,5-10-3.5-H_1x10_P3.50mm_Horizontal" H 6450 2650 50  0001 C CNN
+F 3 "~" H 6450 2650 50  0001 C CNN
+	1    6450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x10 J3
+U 1 1 5BD19B79
+P 4550 2650
+F 0 "J3" H 4470 1925 50  0000 C CNN
+F 1 "Screw_Terminal_01x10" H 4470 2016 50  0000 C CNN
+F 2 "Rob-5.0:TerminalBlock_Phoenix_MKDS-1,5-10-3.5-H_1x10_P3.50mm_Horizontal" H 4550 2650 50  0001 C CNN
+F 3 "~" H 4550 2650 50  0001 C CNN
+	1    4550 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x10 J1
+U 1 1 5BD19BC9
+P 4550 1650
+F 0 "J1" H 4470 925 50  0000 C CNN
+F 1 "Screw_Terminal_01x10" H 4470 1016 50  0000 C CNN
+F 2 "Rob-5.0:TerminalBlock_Phoenix_MKDS-1,5-10-3.5-H_1x10_P3.50mm_Horizontal" H 4550 1650 50  0001 C CNN
+F 3 "~" H 4550 1650 50  0001 C CNN
+	1    4550 1650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4600 6050 4600
+Wire Wire Line
+	6050 4700 6150 4700
+Wire Wire Line
+	6150 4800 6050 4800
+Wire Wire Line
+	6050 4900 6150 4900
+Wire Wire Line
+	6150 5000 6050 5000
+Wire Wire Line
+	6050 5100 6150 5100
+Wire Wire Line
+	6150 5200 6050 5200
+Wire Wire Line
+	6050 5300 6150 5300
+Wire Wire Line
+	6050 5400 6150 5400
+Wire Wire Line
+	6150 5500 6050 5500
+Wire Wire Line
+	6050 5600 6150 5600
+Wire Wire Line
+	6150 5700 6050 5700
+Wire Wire Line
+	6050 5800 6150 5800
+Text GLabel 4950 900  1    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	5000 3150 4750 3150
+Wire Wire Line
+	4750 3050 5000 3050
+Wire Wire Line
+	5000 2950 4800 2950
+Wire Wire Line
+	4750 2850 5000 2850
+Wire Wire Line
+	5000 2750 4750 2750
+Wire Wire Line
+	4750 2650 5000 2650
+Wire Wire Line
+	5000 2550 4750 2550
+Wire Wire Line
+	4750 2450 4950 2450
+Wire Wire Line
+	5000 2350 4750 2350
+Wire Wire Line
+	4750 2250 5000 2250
+Wire Wire Line
+	5000 2150 4750 2150
+Wire Wire Line
+	4750 2050 5000 2050
+Wire Wire Line
+	5000 1950 4750 1950
+Wire Wire Line
+	4750 1850 5000 1850
+Wire Wire Line
+	5000 1750 4750 1750
+Wire Wire Line
+	4750 1650 4900 1650
+Wire Wire Line
+	5000 1550 4750 1550
+Wire Wire Line
+	4750 1450 4850 1450
+Wire Wire Line
+	5000 1350 4950 1350
+Wire Wire Line
+	4750 1250 5000 1250
+Text GLabel 4850 800  1    50   BiDi ~ 0
+SCL
+Wire Wire Line
+	4950 1350 4950 900 
+Connection ~ 4950 1350
+Wire Wire Line
+	4950 1350 4750 1350
+Wire Wire Line
+	4850 800  4850 1450
+Connection ~ 4850 1450
+Wire Wire Line
+	4850 1450 5000 1450
+Text GLabel 5050 4900 0    50   BiDi ~ 0
+SCL
+Text GLabel 5050 4800 0    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	5150 4800 5050 4800
+Wire Wire Line
+	5050 4900 5150 4900
+Wire Wire Line
+	6250 3150 6150 3150
+Wire Wire Line
+	6000 3050 6050 3050
+Wire Wire Line
+	6250 2950 6000 2950
+Wire Wire Line
+	6000 2850 6200 2850
+Wire Wire Line
+	6250 2750 6000 2750
+Wire Wire Line
+	6000 2650 6200 2650
+Wire Wire Line
+	6250 2550 6000 2550
+Wire Wire Line
+	6000 2450 6250 2450
+Wire Wire Line
+	6250 2350 6000 2350
+Wire Wire Line
+	6000 2250 6250 2250
+Wire Wire Line
+	6250 2150 6150 2150
+Wire Wire Line
+	6000 2050 6250 2050
+Wire Wire Line
+	6250 1950 6000 1950
+Wire Wire Line
+	6000 1850 6100 1850
+Wire Wire Line
+	6250 1750 6000 1750
+Wire Wire Line
+	6000 1650 6250 1650
+Wire Wire Line
+	6250 1550 6000 1550
+Wire Wire Line
+	6000 1250 6250 1250
+Wire Wire Line
+	6000 1450 6050 1450
+Wire Wire Line
+	6250 1350 6000 1350
+Text GLabel 4800 3300 3    50   BiDi ~ 0
+MCLR
+Text GLabel 5050 4500 0    50   BiDi ~ 0
+MCLR
+Text GLabel 5050 4600 0    50   BiDi ~ 0
+ISCP_DAT
+Text GLabel 5050 4700 0    50   BiDi ~ 0
+ISCP_CLK
+Text GLabel 6050 3300 3    50   BiDi ~ 0
+ISCP_DAT
+Text GLabel 6150 3400 3    50   BiDi ~ 0
+ISCP_CLK
+Wire Wire Line
+	4800 2950 4800 3300
+Connection ~ 4800 2950
+Wire Wire Line
+	4800 2950 4750 2950
+Wire Wire Line
+	6050 3050 6050 3300
+Connection ~ 6050 3050
+Wire Wire Line
+	6050 3050 6250 3050
+Wire Wire Line
+	6150 3150 6150 3400
+Connection ~ 6150 3150
+Wire Wire Line
+	6150 3150 6000 3150
+Wire Wire Line
+	5150 4500 5050 4500
+Wire Wire Line
+	5050 4600 5150 4600
+Wire Wire Line
+	5150 4700 5050 4700
+$Comp
+L Connector:Screw_Terminal_01x15 J6
+U 1 1 5BD4C115
+P 6350 5200
+F 0 "J6" H 6430 5242 50  0000 L CNN
+F 1 "Screw_Terminal_01x15" H 6430 5151 50  0000 L CNN
+F 2 "Rob-5.0:TerminalBlock_Phoenix_MKDS-1,5-15-3.5-H_1x15_P3.50mm_Horizontal" H 6350 5200 50  0001 C CNN
+F 3 "~" H 6350 5200 50  0001 C CNN
+	1    6350 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BD4C16D
+P 6150 4450
+F 0 "#PWR0101" H 6150 4200 50  0001 C CNN
+F 1 "GND" H 6155 4277 50  0000 C CNN
+F 2 "" H 6150 4450 50  0001 C CNN
+F 3 "" H 6150 4450 50  0001 C CNN
+	1    6150 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5BD4C197
+P 6150 5950
+F 0 "#PWR0102" H 6150 5700 50  0001 C CNN
+F 1 "GND" H 6155 5777 50  0000 C CNN
+F 2 "" H 6150 5950 50  0001 C CNN
+F 3 "" H 6150 5950 50  0001 C CNN
+	1    6150 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5900 6150 5950
+Wire Wire Line
+	6150 4500 6150 4450
+$Comp
+L power:GND #PWR0103
+U 1 1 5BD50CCF
+P 6050 1050
+F 0 "#PWR0103" H 6050 800 50  0001 C CNN
+F 1 "GND" H 6055 877 50  0000 C CNN
+F 2 "" H 6050 1050 50  0001 C CNN
+F 3 "" H 6050 1050 50  0001 C CNN
+	1    6050 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 1450 6050 1100
+Connection ~ 6050 1450
+Wire Wire Line
+	6050 1450 6250 1450
+Wire Wire Line
+	6100 1850 6100 1100
+Wire Wire Line
+	6100 1100 6050 1100
+Connection ~ 6100 1850
+Wire Wire Line
+	6100 1850 6250 1850
+Connection ~ 6050 1100
+Wire Wire Line
+	6050 1100 6050 1050
+Wire Wire Line
+	6150 2150 6150 1100
+Wire Wire Line
+	6150 1100 6100 1100
+Connection ~ 6150 2150
+Wire Wire Line
+	6150 2150 6000 2150
+Connection ~ 6100 1100
+Wire Wire Line
+	6200 2650 6200 1100
+Wire Wire Line
+	6200 1100 6150 1100
+Connection ~ 6200 2650
+Wire Wire Line
+	6200 2650 6250 2650
+Connection ~ 6150 1100
+Wire Wire Line
+	6200 2850 6200 2650
+Connection ~ 6200 2850
+Wire Wire Line
+	6200 2850 6250 2850
+$Comp
+L power:GND #PWR0104
+U 1 1 5BD5DC8D
+P 5000 3350
+F 0 "#PWR0104" H 5000 3100 50  0001 C CNN
+F 1 "GND" H 5005 3177 50  0000 C CNN
+F 2 "" H 5000 3350 50  0001 C CNN
+F 3 "" H 5000 3350 50  0001 C CNN
+	1    5000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3150 5000 3350
+Connection ~ 5000 3150
+Wire Wire Line
+	4950 2450 4950 3350
+Wire Wire Line
+	4950 3350 5000 3350
+Connection ~ 4950 2450
+Wire Wire Line
+	4950 2450 5000 2450
+Connection ~ 5000 3350
+Wire Wire Line
+	4900 1650 4900 3350
+Wire Wire Line
+	4900 3350 4950 3350
+Connection ~ 4900 1650
+Wire Wire Line
+	4900 1650 5000 1650
+Connection ~ 4950 3350
+$EndSCHEMATC
